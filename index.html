@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: yellow;">Kredi Hesaplama Aracı</h1>
+    <form id="anaKredi">
+        <select  id="krediTürü">
+            <option value="seciniz">Seçiniz</option>
+            <option value="ihtiyac">ihtiyaç</option>
+            <option value="konut">Konut</option>
+            <option value="Taşit">Taşit</option>
+            <option value="ekHesap">Ek Hesap</option>
+        </select>
+        <select  id="vadeSayisi">
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="120">120</option>
+        </select>
+        <br><br>
+      
+             <label for="cekilecekTutar">çekilecek tutar: </label>
+        <input type="text"  id="cekilecekTutar">
+       
+        
+        <input type="button" value="Hesapla" onclick=krediHesaplama()>
+    </form>
+    <h5 id="sonuc"></h5>
+    <script src="script.js"></script>
+</body>
+</html>
